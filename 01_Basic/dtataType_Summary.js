@@ -4,37 +4,89 @@
 
 // Primitive = String, Number, BigInt, null, boolean, undefine, symble
 
-const myName = "Raktim" //TypeOf=String
-const Age = 26 //TypeOf=Number
-const bigNumber = 11225556622225855n //TypeOf=BigInt
-const email = null //TypeOf=object***
-let isLoggedIn = true;// TypeOf = boolean
-let hasPermission = false;// TypeOf = boolean
-let isHeCome;
+// const myName = "Raktim" //TypeOf=String
+// const Age = 26 //TypeOf=Number
+// const bigNumber = 11225556622225855n //TypeOf=BigInt
+// const email = null //TypeOf=object***
+// let isLoggedIn = true;// TypeOf = boolean
+// let hasPermission = false;// TypeOf = boolean
+// let isHeCome;
 
 
 // Refarence(Non Primitive) = array,object,Function
 
-const myFamilyMember = ["baba","ma","vai","bon"] //arry JavaScript-এ Array আসলে special type of object।
+// const myFamilyMember = ["baba","ma","vai","bon"] //arry JavaScript-এ Array আসলে special type of object।
 
 //তাই typeof myFamilyMember দিলে আউটপুট হবে "object"।
 
 //কিন্তু এটা যে আসলেই Array তা চেক করার সঠিক উপায় হলো:  console.log(Array.isArray(myFamilyMember))
 
-const myBiodata = {
-    name:"Raktim",
-    age:26,
-    weight:69,
-    height:5.8,
-    hraiStyle:"Black"
+// const myBiodata = {
+//     name:"Raktim",
+//     age:26,
+//     weight:69,
+//     height:5.8,
+//     hraiStyle:"Black"
 
-} // object
+// } // object
 
-const myFunction = function () {
-    console.log("Hellow World");
+// const myFunction = function () {
+//     console.log("Hellow World");
     
-}
+// }
 
-console.log(typeof myFunction);
+// console.log(typeof myFunction);
 
-console.log(Array.isArray(myFamilyMember))
+// console.log(Array.isArray(myFamilyMember))
+
+
+
+
+// Type Of Memory --- 2 Type
+// 1. Stack(primitive)
+// 2.Heap(Non-Primitive)
+
+// let myOriginalName = "Raktim"
+// let myNickName = myOriginalName
+// myNickName = "Shuvrow"
+// console.log(myNickName);
+// console.log(myOriginalName);
+
+
+// let MyBio = {
+//     email:"raktim@google.com",
+//     name:"Raktim",
+//     age:26,
+//     weight:69,
+// }
+
+// let SecoundBio = MyBio
+
+// SecoundBio.email = "shuvrow@change.com"
+// console.log(MyBio);
+
+
+
+
+// let fruit = "Mango";
+// let myFruit = fruit;
+
+// myFruit = "Apple";
+
+// console.log(fruit);  //Mango
+// console.log(myFruit);//Apple
+
+
+
+
+// let car = { brand: "Toyota", model: "Corolla" };
+// let myCar = car;
+
+// myCar.model = "Supra";
+
+// console.log(car.model);//  Corolla
+// console.log(myCar.model);//Supra
+
+
+
+
